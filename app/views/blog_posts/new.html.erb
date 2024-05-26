@@ -1,0 +1,9 @@
+ <h1>New Blog Post</h1>
+
+<%= form_for @blog_post do |f| %>
+  <%= render 'form_fields', form: f %>
+  <div>
+    <%= f.submit "Create Blog Post" %>
+    <%= link_to 'Cancel', blog_posts_path %>
+  </div>
+<% end %>
